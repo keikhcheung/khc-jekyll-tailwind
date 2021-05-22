@@ -1,5 +1,18 @@
-title: Tailwind Jekyll Starter Kit
-description: A starter kit for using Tailwind with Jekyll
+title:          kei ka-hei cheung
+description:    Experience design for digital services & products. A few thoughts on interactions, audiovisuals, writing, and plants.
+author:         Kei Ka-hei Cheung
+url:            https://keikhcheung.com
+email:          hello@keikhcheung.com
+twitter:
+  username:     keikhcheung
+  card:         summary
+github:         https://github.com/keikhcheung
+linkedin:       https://www.linkedin.com/in/kei-cheung/
+
+permalink:      /:slug     # pretty == /:categories/:year/:month/:day/:title/
+
+include:
+  - _pages
 
 exclude:
   - Gemfile
@@ -13,3 +26,28 @@ exclude:
   - src
   - tailwind.config.js
   - netlify.toml
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
+
+# # Collectinos
+# collections:
+#   notes:
+#     output: true
+#     permalink: /notes/:slug
+
+# # Pages path AND default layout applied
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: "default"
+# - scope:
+#       path: "_posts/**/*.md"
+#     values:
+#       layout: "page"
+#   - scope:
+#       path: "_notes/**/*.md"
+#     values:
+#       layout: "note"

@@ -6,4 +6,15 @@ assets/css
 node_modules
 .bundle/
 vendor/
+
+# Visual Studio Code
 .vscode
+
+# Notes graph metadata
+_includes/notes_graph.json
+
+# Notes graph metadata
+_includes/notes_graph.json
+
+# Obsidian config
+.obsidian
