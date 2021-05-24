@@ -1,0 +1,36 @@
+<nav x-data="{ mobileMenuOpen: false}" class="fixed z-10 top-0 right-0 md:w-full md:py-2 bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur" :class="{ 'w-full': mobileMenuOpen , 'w-min': !mobileMenuOpen}">
+  <!-- Hamburger menu button -->
+  <button @click="mobileMenuOpen = !mobileMenuOpen"
+          class="md:hidden p-4 float-right"
+          :class="{ 'hidden': mobileMenuOpen , 'block': !mobileMenuOpen}"
+          aria-label="open menu">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+  <!-- Close menu button -->
+  <button @click="!mobileMenuOpen = mobileMenuOpen"
+          :class="{ 'block': mobileMenuOpen , 'hidden': !mobileMenuOpen}"
+          class="md:hidden p-4 float-right"
+          aria-label="close menu">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+  </button>
+  <!-- Menu list -->
+  <ul class="max-w-screen-md md:grid grid-cols-5 gap-1 mx-auto"
+      :class="{ 'block': mobileMenuOpen , 'hidden': !mobileMenuOpen}"
+      @click.away="mobileMenuOpen = false">
+    {% for item in site.data.navigation %}
+      <li role="presentation">
+        <a
+          class="flex font-sign font-semibold items-center rounded-full pl-8 py-4
+          md:justify-center md:pl-0 md:py-2 md:hover:bg-yellow-200
+            {% if page.url == item.url %}
+              text-blue-800 before:content" data-content="»&nbsp;
+            {% endif%}"
+          href="{{ item.url | prepend: site.baseurl }}"">
+            {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
