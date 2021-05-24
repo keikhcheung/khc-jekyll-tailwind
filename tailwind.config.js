@@ -1,4 +1,3 @@
-const fontFamily = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
@@ -8,6 +7,10 @@ module.exports = {
       fontFamily: {
         'sign': '"Space Grotesk", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
       },
+      lineHeight: {
+        'extra-loose': '2.75',
+        '12': '3rem',
+      },
       // Change headings font to as defined by `sign`
       typography: theme => ({
         DEFAULT: {
@@ -15,7 +18,7 @@ module.exports = {
             h1: {
               fontFamily: `${theme('fontFamily.sign')}`,
               fontWeight: "900",
-              letterSpacing: "-0.02em"
+              letterSpacing: "-0.02em",
             },
             h2: {
               fontFamily: `${theme('fontFamily.sign')}`,
@@ -25,7 +28,7 @@ module.exports = {
             },
             h4: {
               fontFamily: `${theme('fontFamily.sign')}`,
-            }
+            },
           }
         }
       })

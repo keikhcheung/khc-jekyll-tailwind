@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles overriding tailwind-typography */
+.prose blockquote {
+  quotes: "\2018""\2019""\201C""\201D";
+}
+
+.tag a {
+  @apply no-underline;
+}
+
+.prose .cap {
+  @apply -mt-5 md:-mt-4 text-gray-500 text-center italic text-sm md:text-base;
+}
+
+.prose .ter {
+  @apply text-gray-500 italic;
+}
