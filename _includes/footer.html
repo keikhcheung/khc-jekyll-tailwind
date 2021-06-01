@@ -8,7 +8,7 @@
       {%- assign date_to   = site.time | date_to_xmlschema -%}
       {%- assign year_to   = date_to | date: '%Y' -%}
       {%- unless year_from == nil or year_from == year_to -%}
-        <time datetime="{{ date_from }}">{{ year_from }}</time>
+        <time datetime="{{ date_from }}">{{ year_from }}</time>&ndash;
       {%- endunless -%}
       <time datetime="{{ date_to }}">{{ year_to }}</time>
       {%- if site.author -%}
