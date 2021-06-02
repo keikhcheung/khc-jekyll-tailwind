@@ -1,3 +1,4 @@
+const { zIndex } = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
@@ -22,16 +23,28 @@ module.exports = {
             },
             h2: {
               fontFamily: `${theme('fontFamily.sign')}`,
+              letterSpacing: "-0.017em",
             },
             h3: {
               fontFamily: `${theme('fontFamily.sign')}`,
+              letterSpacing: "-0.017em",
             },
             h4: {
               fontFamily: `${theme('fontFamily.sign')}`,
             },
+            // Remote the default enclosing quotation marks
+            'blockquote p:first-of-type::before': {
+              content: 'none'
+            },
+            'blockquote p:first-of-type::after': {
+              content: 'none'
+            },
           }
         }
-      })
+      }),
+      zIndex: {
+        '-10': '-10',
+      },
     },
   },
   variants: {},

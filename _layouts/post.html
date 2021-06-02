@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header>
+<header class="xl:col-start-1 xl:col-span-9">
   <h1>{{ page.title }}</h1>
 
   {%- if page.lede -%}
@@ -13,11 +13,11 @@ layout: default
     {%- include reading-estimate.html -%}
   </div>
   {%- if page.image -%}
-    <img src="{{ page.image }}" class="" alt="{{ page.title }}">
+    <img src="{{ page.image }}" class="xl:col-start-1 xl:col-span-full xl:max-w-screen-lg" alt="{{ page.image_alt }}">
   {%- endif -%}
 </header>
 
-<div class="" itemprop="articleBody">
+<div class="xl:col-start-1 xl:col-span-9 xl:max-w-prose" itemprop="articleBody">
   {{ content }}
 
   <div class="mt-8 leading-extra-loose tag">

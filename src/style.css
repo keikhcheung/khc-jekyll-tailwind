@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 /* Custom styles overriding tailwind-typography */
-.prose blockquote {
+/* .prose blockquote {
   quotes: "\2018""\2019""\201C""\201D";
-}
+} */
 
 .tag a {
   @apply no-underline;
@@ -17,4 +17,42 @@
 
 .prose .ter {
   @apply text-gray-500 italic;
+}
+
+.prose .wide {
+  @apply xl:max-w-screen-lg;
+}
+
+.prose h2::before {
+  @apply absolute;
+  content: '##';
+  margin-left: -3ch;        /* make preceding `#`s look like flush left */
+}
+
+.prose h3::before {
+  @apply absolute;
+  content: '###';
+  margin-left: -4.25ch;     /* make preceding `#`s look like flush left */
+}
+
+.prose blockquote {
+  @apply font-sign block relative pt-1 w-11/12 border-l-0 not-italic;
+}
+
+.prose blockquote p {
+  @apply text-xl md:text-2xl lg:text-3xl font-black tracking-tight;
+}
+
+.prose blockquote p:first-of-type::before {
+  @apply -ml-10 -mt-6 lg:-mt-8 text-6xl md:text-7xl lg:text-8xl absolute text-gray-200 font-serif not-italic -z-10;
+  content: '\275D';
+}
+
+.prose blockquote > footer, .prose blockquote > .footer {
+  @apply text-right block not-italic;
+}
+
+.prose blockquote > footer::before {
+  content: '\2014';
+  padding: 0.0625em;
 }
