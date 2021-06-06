@@ -35,8 +35,14 @@
   margin-left: -4.25ch;     /* make preceding `#`s look like flush left */
 }
 
+.prose a {
+  @apply text-yellow-500;
+}
+
+
+/* Blockquote */
 .prose blockquote {
-  @apply font-sign block relative pt-1 w-11/12 border-l-0 not-italic;
+  @apply font-sign block relative w-11/12 border-l-0 not-italic;
 }
 
 .prose blockquote p {
@@ -55,4 +61,69 @@
 .prose blockquote > footer::before {
   content: '\2014';
   padding: 0.0625em;
+}
+
+
+/* Sidenotes and margin notes */
+body {
+  counter-reset: sidenote-counter;   /* for sidenotes counter */
+}
+
+.prose .sidenote, .prose .marginnote {
+  @apply hidden xl:block relative float-right clear-right -mr-96 w-5/12 mt-0 mb-4 text-sm align-baseline text-left not-italic break-words text-gray-500;
+}
+
+.prose .sidenote em, .prose .marginnote em {
+  @apply italic;
+}
+
+.prose .sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.prose .sidenote-number:after {
+  @apply relative align-baseline text-sm -top-1.5 left-0.5;
+  content: counter(sidenote-counter);
+}
+
+
+.prose .sidenote:before {
+  @apply absolute text-sm top-0 -left-4 text-right align-baseline text-yellow-500;
+  content: counter(sidenote-counter);
+}
+
+
+.prose input.margin-toggle {
+  @apply hidden;
+}
+
+
+.prose label.sidenote-number {
+  @apply inline text-yellow-500 pr-1;
+}
+
+
+.prose label.margin-toggle:not(.sidenote-number) {
+  @apply inline xl:hidden;
+}
+
+@media (max-width: 1279px) {
+  .prose .margin-toggle:checked + .sidenote,
+  .prose .margin-toggle:checked + .marginnote {
+    @apply block relative float-left left-2 w-full pr-24 mx-4 my-4;
+    
+    /* width: 95%;
+    margin: 1rem 2.5%; */
+  }
+}
+
+@media (max-width: 1279px) {
+  .prose label {
+    cursor: pointer;
+  }
+}
+@media (min-width: 1280px) {
+  .prose label {
+    cursor: default;
+  }
 }
