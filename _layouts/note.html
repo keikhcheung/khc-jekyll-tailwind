@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<header class="xl:col-start-1 xl:col-span-9">
+  <h1>{{ page.title }}</h1>
+
+  {%- if page.lede -%}
+    <div class="lead">{{ page.lede }}</div>
+  {%- endif -%}
+  
+  <div class="flex my-4 items-center text-gray-400">
+    {%- if page.date -%}
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Created: {{ page.date | date: '%-d %b %Y' }}</time>
+      <!-- seperation line -->
+      <svg class="w-5 h-5 inline-block mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <line stroke-linecap="round" stroke-linejoin="round" stroke-width="1" x1="12" y1="2" x2="12" y2="22"></line>
+      </svg>
+    {%- endif -%}
+    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="datePublished">{%- if page.type != 'pages' -%}
+      Last update: {{ page.last_modified_at | date: "%-d %b %Y" }}
+      {%- endif -%}
+    </time>
+    {%- include reading-estimate.html -%}
+  </div>
+</header>
+
+<div class="xl:col-start-1 xl:col-span-9 xl:max-w-prose note" itemprop="articleBody">
+  {{ content }}
+
+  {% if page.backlinks.size > 0 %}
+    <hr />
+    <aside class="w-full xl:max-w-screen-lg xl:w-max">
+      <h2>Referred in</h2>
+      <div class="grid gap-x-12 gap-y-4 grid-cols-1 md:grid-cols-2">
+        {% for backlink in page.backlinks %}
+          <div class="py-2">
+            <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+            <div class="prose prose-sm">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </aside>
+  {% endif %}
+
+  {%- include tags.html -%}
+</div>

@@ -13,6 +13,7 @@ permalink:      /:slug     # pretty == /:categories/:year/:month/:day/:title/
 
 include:
   - _pages
+  - _notes
 
 exclude:
   - Gemfile
@@ -31,23 +32,23 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
 
-# # Collectinos
-# collections:
-#   notes:
-#     output: true
-#     permalink: /notes/:slug
+# Collectinos
+collections:
+  notes:
+    output: true
+    permalink: /notes/:slug
 
 # # Pages path AND default layout applied
 defaults:
   - scope:
       path: "_pages"
     values:
-      layout: "default"
-# - scope:
-#       path: "_posts/**/*.md"
-#     values:
-#       layout: "page"
-#   - scope:
-#       path: "_notes/**/*.md"
-#     values:
-#       layout: "note"
+      layout: "page"
+  - scope:
+      path: "_posts/**/*.md"
+    values:
+      layout: "post"
+  - scope:
+      path: "_notes/**/*.md"
+    values:
+      layout: "note"

@@ -1,17 +1,18 @@
 _site
 .DS_Store
+*.gem
 .jekyll-cache
 .jekyll-metadata
 assets/css
+assets/js
 node_modules
+node_modules
+npm-debug.log*
 .bundle/
 vendor/
 
 # Visual Studio Code
 .vscode
-
-# Notes graph metadata
-_includes/notes_graph.json
 
 # Notes graph metadata
 _includes/notes_graph.json

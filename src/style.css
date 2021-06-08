@@ -12,11 +12,15 @@
 }
 
 .prose .cap {
-  @apply -mt-5 md:-mt-4 text-gray-500 text-center italic text-sm md:text-base;
+  @apply -mt-5 md:-mt-4 text-gray-400 text-center italic text-sm md:text-base;
+}
+
+.prose .sec {
+  @apply text-gray-400;
 }
 
 .prose .ter {
-  @apply text-gray-500 italic;
+  @apply text-gray-400 italic;
 }
 
 .prose .wide {
@@ -24,13 +28,13 @@
 }
 
 .prose h2::before {
-  @apply absolute;
+  @apply absolute text-gray-200;
   content: '##';
   margin-left: -3ch;        /* make preceding `#`s look like flush left */
 }
 
 .prose h3::before {
-  @apply absolute;
+  @apply absolute text-gray-200;
   content: '###';
   margin-left: -4.25ch;     /* make preceding `#`s look like flush left */
 }
@@ -39,28 +43,47 @@
   @apply text-yellow-500;
 }
 
+.prose mark {
+  @apply bg-yellow-200;
+}
+
+.prose code::before, .prose code::after {
+  content: none;
+}
+
+.prose code {
+  @apply px-1.5 py-1 bg-gray-200 rounded;
+}
+
+.prose cite {
+  @apply italic;
+}
 
 /* Blockquote */
-.prose blockquote {
+.prose .article blockquote {
   @apply font-sign block relative w-11/12 border-l-0 not-italic;
 }
 
-.prose blockquote p {
+.prose .article blockquote p {
   @apply text-xl md:text-2xl lg:text-3xl font-black tracking-tight;
 }
 
-.prose blockquote p:first-of-type::before {
+.prose .article blockquote p:first-of-type::before {
   @apply -ml-10 -mt-6 lg:-mt-8 text-6xl md:text-7xl lg:text-8xl absolute text-gray-200 font-serif not-italic -z-10;
   content: '\275D';
 }
 
-.prose blockquote > footer, .prose blockquote > .footer {
+.prose .article blockquote > footer, .prose .note blockquote > footer {
   @apply text-right block not-italic;
 }
 
-.prose blockquote > footer::before {
+.prose .article blockquote > footer::before, .prose .note blockquote > footer::before {
   content: '\2014';
   padding: 0.0625em;
+}
+
+.prose .note blockquote em {
+  @apply not-italic;
 }
 
 
@@ -70,7 +93,7 @@ body {
 }
 
 .prose .sidenote, .prose .marginnote {
-  @apply hidden xl:block relative float-right clear-right -mr-96 w-5/12 mt-0 mb-4 text-sm align-baseline text-left not-italic break-words text-gray-500;
+  @apply hidden xl:block relative float-right clear-right -mr-96 w-5/12 mt-0 mb-4 text-sm align-baseline text-left not-italic break-words text-gray-400;
 }
 
 .prose .sidenote em, .prose .marginnote em {
@@ -126,4 +149,16 @@ body {
   .prose label {
     cursor: default;
   }
+}
+
+/* Backlinks, wikilinks */
+.prose .invalid-link {
+  @apply text-gray-400 px-0.5 bg-gray-200;
+  color: $color-invalid-link;
+  cursor: help;
+}
+
+.prose .invalid-link-brackets {
+  @apply text-gray-400;
+  cursor: help;
 }
