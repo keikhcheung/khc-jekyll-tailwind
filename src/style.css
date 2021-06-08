@@ -12,7 +12,7 @@
 }
 
 .prose .cap {
-  @apply -mt-5 md:-mt-4 text-gray-400 text-center italic text-sm md:text-base;
+  @apply -mt-5 md:-mt-4 mb-8 text-gray-400 text-center italic text-sm md:text-base;
 }
 
 .prose .sec {
@@ -104,14 +104,15 @@ body {
   counter-increment: sidenote-counter;
 }
 
+/* Sidenote anchor in body */
 .prose .sidenote-number:after {
-  @apply relative align-baseline text-sm -top-1.5 left-0.5;
+  @apply relative align-top text-xs md:text-sm left-0.5;
   content: counter(sidenote-counter);
 }
 
-
+/* Sidenote index on the side */
 .prose .sidenote:before {
-  @apply absolute text-sm top-0 -left-4 text-right align-baseline text-yellow-500;
+  @apply absolute text-xs md:text-sm -left-4 text-right align-baseline text-yellow-500;
   content: counter(sidenote-counter);
 }
 
