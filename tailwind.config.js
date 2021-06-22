@@ -2,6 +2,7 @@ const { zIndex } = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+  mode: 'jit',
   purge: [`_site/**/*.html`],
   theme: {
     extend: {
@@ -64,19 +65,20 @@ module.exports = {
         });
       });
     }),
-    plugin(({ addUtilities }) => {
-      const contentUtilities = {
-        '.content': {
-          content: 'attr(data-content)',
-        },
-        '.content-before': {
-          content: 'attr(data-before)',
-        },
-        '.content-after': {
-          content: 'attr(data-after)',
-        },
-      };
-      addUtilities(contentUtilities, ['before', 'after']);
-    }),
+    // Deprecated by Tailwind CSS 2.2
+    // plugin(({ addUtilities }) => {
+    //   const contentUtilities = {
+    //     '.content': {
+    //       content: 'attr(data-content)',
+    //     },
+    //     '.content-before': {
+    //       content: 'attr(data-before)',
+    //     },
+    //     '.content-after': {
+    //       content: 'attr(data-after)',
+    //     },
+    //   };
+    //   addUtilities(contentUtilities, ['before', 'after']);
+    // }),
   ],
 };
