@@ -12,7 +12,7 @@
 }
 
 .prose .cap {
-  @apply -mt-5 md:-mt-4 mb-8 text-gray-400 text-center italic text-sm md:text-base;
+  @apply block clear-both -mt-5 md:-mt-4 mb-8 text-gray-400 text-center italic text-sm md:text-base;
 }
 
 .prose .sec {
@@ -24,7 +24,7 @@
 }
 
 .prose .wide {
-  @apply xl:max-w-screen-lg;
+  @apply xl:max-w-screen-lg xl:w-max;
 }
 
 .prose h2::before {
@@ -59,6 +59,10 @@
   @apply italic;
 }
 
+.prose div.flex > p.flex {
+  @apply m-0;     /* Remove extra margin when having images inside flexbox. */
+}
+
 /* Blockquote */
 .prose .article blockquote {
   @apply font-sign block relative w-11/12 border-l-0 not-italic;
@@ -74,20 +78,52 @@
 }
 
 .prose .article blockquote > footer, .prose .note blockquote > footer {
-  @apply text-right block not-italic;
+  @apply text-right block not-italic before:content-[\2014] before:p-[0.0625em];
 }
 
-.prose .article blockquote > footer::before, .prose .note blockquote > footer::before {
+/* .prose .article blockquote > footer::before, .prose .note blockquote > footer::before {
   content: '\2014';
   padding: 0.0625em;
-}
+} */
 
 .prose .note blockquote em {
   @apply not-italic;
 }
 
 
-/* Sidenotes and margin notes */
+/*
+ * Multiple images in a row
+ * Responsive, break into columns from screen(sm)
+ */
+@media (max-width: 639px) {
+  .prose .multi-img p > img {
+    @apply my-0;
+  }
+  .prose .multi-img p:first-of-type > img {
+    @apply mt-8;
+  }
+  .prose .multi-img p:last-of-type > img {
+    @apply mb-8;
+  }
+}
+
+.prose .multi-img {
+  @apply flex flex-col sm:flex-row gap-2;
+}
+
+.prose .multi-img p {
+  @apply flex flex-1 my-0 self-center sm:self-start;
+}
+
+/* Balace the extra margin-bottom on preceding <p> not overlapped by the succeeding img */
+.prose p + .multi-img {
+  @apply -mt-5 md:mt-[calc(-4em/3)];
+}
+
+
+/*
+ * Sidenotes and margin notes
+ */
 body {
   counter-reset: sidenote-counter;   /* for sidenotes counter */
 }
@@ -104,7 +140,10 @@ body {
   counter-increment: sidenote-counter;
 }
 
-/* Sidenote anchor in body */
+
+/*
+ * Sidenote anchor in body
+ */
 .prose .sidenote-number:after {
   @apply relative align-top text-xs md:text-sm left-0.5;
   content: counter(sidenote-counter);
@@ -146,7 +185,12 @@ body {
     cursor: pointer;
   }
 }
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
+  .prose label {
+    cursor: default;
+  }
+} */
+@media screen(xl) {
   .prose label {
     cursor: default;
   }
