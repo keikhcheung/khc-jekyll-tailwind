@@ -4,9 +4,11 @@
 {% include head.html %}
 
 <main class="flex-grow mt-20 mb-16 md:mt-32 px-4 md:px-0.5 mx-auto xl:max-w-screen-lg">
-  <article class="prose md:prose-lg mx-auto xl:max-w-screen-lg xl:grid xl:gap-4 xl:grid-cols-12">
+  <section class="prose md:prose-lg mx-auto xl:max-w-screen-lg">
+    <h1>{{ page.title }}</h1>
+
     {{ content }}
-  </article>
+  </section>
 </main>
 
 {% include footer.html %}

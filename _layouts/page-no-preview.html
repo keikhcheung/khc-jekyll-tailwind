@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header class="xl:col-start-1 xl:col-span-9">
+  <h1>{{ page.title }}</h1>
+
+  {%- if page.lede -%}
+    <div class="lead">{{ page.lede }}</div>
+  {%- endif -%}
+
+  {%- if page.date -%}
+    <div class="flex my-4 items-center text-gray-400">
+      <time class="" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%-d %b %Y' }}</time>
+    </div>
+  {%- endif -%}
+</header>
+
+<div class="xl:col-start-1 xl:col-span-9 xl:max-w-prose article" itemprop="articleBody">
+  {{ content }}
+
+  {%- include tags.html -%}
+</div>

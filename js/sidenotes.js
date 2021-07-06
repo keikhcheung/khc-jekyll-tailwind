@@ -27,5 +27,5 @@ footnotes_anchors.forEach((element, index) => {
   // Replace footnote anchor with sidenote.
   element.parentNode.replaceChild(sn_toggle, element);
   // Add additional trailing DOM element to the replaced element.
-  sn_toggle.insertAdjacentHTML('afterend', '<input type="checkbox" id="' + index + '" class="margin-toggle"/><span class="sidenote">' + fn_text + '</span>');
+  sn_toggle.insertAdjacentHTML('afterend', '<input type="checkbox" id="' + index + '" class="margin-toggle"/><aside class="sidenote">' + fn_text + '</aside>');
 });

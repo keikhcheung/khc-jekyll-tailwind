@@ -1,6 +1,6 @@
 <div class="mt-8 leading-extra-loose tag">
   {% for tag in page.tags %}
     {% capture tag %}{{ tag }}{% endcapture %}
-      <a class="px-3 py-2 border border-yellow-500 rounded-md mr-1 before:content-['#'] font-sign" href="/tag/{{ tag }}">{{ tag }}</a>
+      <a class="px-3 py-2 border border-yellow-500 rounded-md mr-1 before:content-['#'] whitespace-nowrap font-sign" href="/tag/{{ tag }}">{{ tag }}</a>
   {% endfor %}
 </div>

@@ -1,0 +1,30 @@
+- title: ComPASS
+  client: TÜV Rheinland
+  description: global business collab system
+  url: /compass
+- title: Tintoretto2Go
+  client: Wallraf-Richartz Museum
+  description: treasure hunt + relive Renaissance AR 
+  url: /tintoretto
+- title: MesInfos
+  client: la Fing & Cozy Cloud
+  description: personal data management hub 
+  url: /mesinfos
+- title: Ardi
+  client: 
+  description: research with AI
+  url: /ardi
+- client: Institut Carnot de l'éducation
+  description: pedagogy co-research platform
+  url: /carnot
+- title: MuseoPic
+  client: Lyon museums
+  description: augmented exhibitions + analytics
+  url: /museopic
+- title: SnowRec
+  client: 
+  description: connected ski camp 
+  url: /snowrec
+- client: Chamrousse Tourism Office
+  description: website relaunch
+  url: /chamrousse

@@ -1,9 +1,9 @@
-- title: Writing
-  url: /writing
-- title: Notes (test)
-  url: /notes/about-these-notes
+- title: Notes
+  url: /notes/
 - title: Projects
   url: /project
+- title: Blog
+  url: /blog
 - title: About
   url: /about
 - title: Specimen

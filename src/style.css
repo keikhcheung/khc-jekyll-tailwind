@@ -27,13 +27,13 @@
   @apply xl:max-w-screen-lg xl:w-max;
 }
 
-.prose h2::before {
+.prose h2:not(.category)::before {
   @apply absolute text-gray-200;
   content: '##';
   margin-left: -3ch;        /* make preceding `#`s look like flush left */
 }
 
-.prose h3::before {
+.prose h3:not(.category)::before {
   @apply absolute text-gray-200;
   content: '###';
   margin-left: -4.25ch;     /* make preceding `#`s look like flush left */
@@ -44,7 +44,7 @@
 }
 
 .prose mark {
-  @apply bg-yellow-200;
+  @apply bg-yellow-100 py-1;
 }
 
 .prose code::before, .prose code::after {
@@ -77,10 +77,13 @@
   content: '\275D';
 }
 
-.prose .article blockquote > footer, .prose .note blockquote > footer {
-  @apply text-right block not-italic before:content-[\2014] before:p-[0.0625em];
+.prose .article blockquote p:last-of-type {
+  @apply mb-4;
 }
 
+.prose .article blockquote > footer, .prose .note blockquote > footer {
+  @apply text-right block not-italic before:content-['\2014'] before:p-[0.0625em];
+}
 /* .prose .article blockquote > footer::before, .prose .note blockquote > footer::before {
   content: '\2014';
   padding: 0.0625em;
@@ -129,7 +132,7 @@ body {
 }
 
 .prose .sidenote, .prose .marginnote {
-  @apply hidden xl:block relative float-right clear-right -mr-96 w-5/12 mt-0 mb-4 text-sm align-baseline text-left not-italic break-words text-gray-400;
+  @apply hidden xl:block relative float-right clear-right -mr-96 w-[19rem] mt-0 mb-4 text-sm align-baseline text-left not-italic break-words text-gray-400;
 }
 
 .prose .sidenote em, .prose .marginnote em {
@@ -196,7 +199,10 @@ body {
   }
 }
 
-/* Backlinks, wikilinks */
+
+/*
+ * Backlinks, wikilinks
+ */
 .prose .invalid-link {
   @apply text-gray-400 px-0.5 bg-gray-200;
   color: $color-invalid-link;
@@ -207,3 +213,23 @@ body {
   @apply text-gray-400;
   cursor: help;
 }
+
+
+/*
+ * Post listing page hyperlinks
+ */
+.prose .listing a {
+  @apply font-normal no-underline;
+}
+
+.prose .listing img {
+  @apply mt-0;
+}
+
+
+/*
+ * Post preview image
+ */
+ .post-preview {
+   @apply my-4;
+ }
