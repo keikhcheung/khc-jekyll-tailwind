@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 const { zIndex } = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
@@ -7,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sign': '"Space Grotesk", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sign: ['Space Grotesk', ...defaultTheme.fontFamily.mono],
       },
       lineHeight: {
         'extra-loose': '2.75',
