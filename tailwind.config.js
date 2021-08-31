@@ -7,6 +7,10 @@ module.exports = {
   purge: [`_site/**/*.html`],
   theme: {
     extend: {
+      // for #sardine-17 spin
+      animation: {
+        'rotate-y-5': 'rotate-y-5 3.25s ease-in-out',
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         sign: ['Space Grotesk', ...defaultTheme.fontFamily.mono],
@@ -14,6 +18,13 @@ module.exports = {
       lineHeight: {
         'extra-loose': '2.75',
         '12': '3rem',
+      },
+      // for #sardine-17 spin
+      keyframes: {
+        'rotate-y-5': {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(1800deg)' },
+        }
       },
       // Change headings font to as defined by `sign`
       typography: theme => ({
@@ -52,6 +63,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     // Add `before:content` & `after:content` pseudo classes for ::before and ::after
     // Working with data-content pseudo classes

@@ -9,7 +9,16 @@ layout: default
     <div class="lead">{{ page.lede }}</div>
   {%- endif -%}
 
-  {%- if page.date -%}
+  {%- if page.time -%}
+    <div class="flex my-4 items-center text-gray-400">
+      <span class="" >
+        {{ page.time }}
+        {%- if page.setup -%}
+          <br />{{ page.setup }}
+        {%- endif -%}
+      </span>
+    </div>
+  {%- elsif page.date -%}
     <div class="flex my-4 items-center text-gray-400">
       <time class="" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%-d %b %Y' }}</time>
     </div>

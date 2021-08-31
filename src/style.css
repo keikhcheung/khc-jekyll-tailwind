@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Import Inter @font-face settings
+ */
+
+@layer base {
+  @import url('https://rsms.me/inter/inter.css');
+}
+
 /* Custom styles overriding tailwind-typography */
 /* .prose blockquote {
   quotes: "\2018""\2019""\201C""\201D";
@@ -125,6 +133,14 @@
 
 
 /*
+ * Video
+ */
+.prose .video {
+  @apply my-8;
+}
+
+
+/*
  * Sidenotes and margin notes
  */
 body {
@@ -222,14 +238,25 @@ body {
   @apply font-normal no-underline;
 }
 
+/*
+ * Post preview image
+ */
 .prose .listing img {
-  @apply mt-0;
+  @apply mt-0 mb-4;
 }
-
 
 /*
  * Post preview image
  */
- .post-preview {
-   @apply my-4;
- }
+/* .hall-of-demo li {
+  @apply m-0 !important;
+} */
+.client {
+  @apply before:content-['\25A9'];
+}
+.skill {
+  @apply before:content-['\25C9'];
+}
+.interest {
+  @apply before:content-['\25CE'];
+}
