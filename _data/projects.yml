@@ -1,30 +1,44 @@
 - title: ComPASS
   client: TÜV Rheinland
-  description: global business collab system
+  description: B2E software for coordinating technical certification
+  image: /static/img/project/tuev-compass.jpg
   url: /compass
 - title: Tintoretto2Go
   client: Wallraf-Richartz Museum
-  description: treasure hunt + relive Renaissance AR 
+  description: Relive Renaissance masterpieces in AR 
+  image: /static/img/project/tintoretto-screenshots.jpg
   url: /tintoretto
 - title: MesInfos
   client: la Fing & Cozy Cloud
-  description: personal data management hub 
+  description: Personal, self-hostable data management hub
+  image: /static/img/project/mesinfos-cozy-cloud-data-1.svg
   url: /mesinfos
+- title: Bikespector
+  client: 
+  description: Shared bikes prediction for city mobility
+  image: /static/img/project/bikespector-radar.jpg
+  url: /bikespector
 - title: Ardi
   client: 
-  description: research with AI
+  description: Research with AI
+  image: /static/img/project/ardi.jpg
+  image: /static/img/project/ardi.jpg
   url: /ardi
 - client: Institut Carnot de l'éducation
-  description: pedagogy co-research platform
+  description: Education co-research platform for teachers and specialists
+  image: /static/img/project/carnot-header.png
   url: /carnot
 - title: MuseoPic
   client: Lyon museums
-  description: augmented exhibitions + analytics
+  description: Augmented exhibitions + analytics
+  image: /static/img/project/museopic-loop-1.jpg
   url: /museopic
 - title: SnowRec
   client: 
-  description: connected ski camp 
+  description: Connected ski camp, joy for families
+  image: /static/img/project/snowrec01.png
   url: /snowrec
 - client: Chamrousse Tourism Office
-  description: website relaunch
+  description: Ski resort website relaunch
+  image: /static/img/project/chamrousse01-logo.jpg
   url: /chamrousse

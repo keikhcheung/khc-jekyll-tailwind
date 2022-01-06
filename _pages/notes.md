@@ -29,7 +29,7 @@ Ongoing, working notes, scraped from all around.
   <div class="grid gap-x-12 gap-y-4 grid-cols-1 xl:grid-cols-2">
     {% assign notes_sorted = site.notes | sort: "last_modified_at" | reverse %}
     {% for item in notes_sorted %}
-      <a class="py-2 hover:bg-yellow-100 rounded-xl -mx-4 px-4 transition ease-out
+      <a class="px-4 py-2 -mx-4 rounded-xl hover:bg-amber-50 transition ease-out
                 internal-link"
          href="{{ item.url | prepend: site.baseurl }}{%- if site.use_html_extension -%}.html{%- endif -%}">
         <div class="font-medium underline">{{ item.title }}</div>

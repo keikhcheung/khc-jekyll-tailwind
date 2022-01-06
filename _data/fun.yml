@@ -1,24 +1,32 @@
 - title: linear
   description: 
+  image: /static/img/fun/linear-header.jpg
   url: /linear
 - title: l’œuvre de ma vie
   description: 
+  image: /static/img/fun/l-oeuvre-de-ma-vie-header.jpg
   url: /l-oeuvre-de-ma-vie
 - title: horizons
   description: 
+  image: /static/img/fun/horizon-01-c.jpg
   url: /horizons
 - title: hong kong
   description: 
+  image: /static/img/fun/hong-kong-01.jpg
   url: /hong-kong
 - title: Stronger together!
   description: 
+  image: /static/img/fun/sardinhas18-c.jpg
   url: /sardinhas-2018
 - title: dancing lights
   description: 
+  image: /static/img/fun/dancing-lights-02.jpg
   url: /dancing-lights
 - title: visual poetry
   description: 
   url: /visual-poetry
+  image: /static/img/fun/vp00.jpg
 - title: printemps
   description: 
+  image: /static/img/fun/sardinhas17-07-gh.png
   url: /sardinhas-2017

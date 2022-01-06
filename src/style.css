@@ -48,11 +48,11 @@
 }
 
 .prose a {
-  @apply text-yellow-500;
+  @apply text-amber-400 transition duration-150 hover:ease-in-out hover:text-sky-700;
 }
 
 .prose mark {
-  @apply bg-yellow-100 py-1;
+  @apply bg-amber-100 py-1;
 }
 
 .prose code::before, .prose code::after {
@@ -67,9 +67,12 @@
   @apply italic;
 }
 
+/* Circular depencency error after Tailwind 3.0
+   No longer necessary, it seems like
 .prose div.flex > p.flex {
-  @apply m-0;     /* Remove extra margin when having images inside flexbox. */
+  @apply m-0;     /* Remove extra margin when having images inside flexbox. 
 }
+*/
 
 /* Blockquote */
 .prose .article blockquote {
@@ -170,7 +173,7 @@ body {
 
 /* Sidenote index on the side */
 .prose .sidenote:before {
-  @apply absolute text-xs md:text-sm -left-4 text-right align-baseline text-yellow-500;
+  @apply absolute text-xs md:text-sm -left-4 text-right align-baseline text-amber-400;
   content: counter(sidenote-counter);
 }
 
@@ -181,7 +184,7 @@ body {
 
 
 .prose label.sidenote-number {
-  @apply inline text-yellow-500 pr-1;
+  @apply inline text-amber-400 pr-1 transition duration-150 hover:ease-in-out hover:text-sky-700 xl:hover:transition-none xl:hover:text-amber-400;
 }
 
 

@@ -1,4 +1,4 @@
-<nav x-data="{ mobileMenuOpen: false}" class="fixed z-10 top-0 right-0 md:w-full md:py-2 bg-gray-100 bg-opacity-80 backdrop-blur" :class="{ 'w-full': mobileMenuOpen , 'w-min': !mobileMenuOpen}">
+<nav x-data="{ mobileMenuOpen: false}" class="fixed z-10 top-0 right-0 md:w-full md:py-2 bg-gray-100 bg-opacity-80 backdrop-blur firefox:bg-opacity-95" :class="{ 'w-full': mobileMenuOpen , 'w-min': !mobileMenuOpen}">
   <!-- Hamburger menu button -->
   <button @click="mobileMenuOpen = !mobileMenuOpen"
           class="md:hidden p-4 float-right"
@@ -23,9 +23,10 @@
       <li role="presentation">
         <a
           class="flex font-sign font-semibold items-center rounded-full pl-8 py-4
-          md:justify-center md:pl-0 md:py-2 md:hover:bg-yellow-100 md:transition md:ease-out
+          md:justify-center md:pl-0 md:py-2 md:hover:text-amber-400 md:transition md:ease-out
             {% if page.url == item.url %}
-              text-blue-800 before:content-['&larr;&nbsp;']
+              text-amber-400 before:content-['→ '] md:text-white md:bg-amber-400 md:shadow-md md:shadow-amber-400/30
+              <!-- before:content-['&larr;&nbsp;'] -->
             {% endif%}"
           href="{{ item.url | prepend: site.baseurl }}"">
             {{ item.title }}
