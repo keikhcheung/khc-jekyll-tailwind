@@ -3,8 +3,10 @@ const { zIndex } = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  mode: 'jit',
-  purge: [`_site/**/*.html`],
+  // Deprecated by Tailwind CSS 3
+  // mode: 'jit',
+  // purge: [`_site/**/*.html`],
+  content: [`_site/**/*.html`],
   theme: {
     extend: {
       // for #sardine-17 spin
@@ -94,5 +96,20 @@ module.exports = {
     //   };
     //   addUtilities(contentUtilities, ['before', 'after']);
     // }),
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant('firefox', ({ container, separator }) => {
+        const isFirefoxRule = postcss.atRule({
+          name: '-moz-document',
+          params: 'url-prefix()',
+        });
+        isFirefoxRule.append(container.nodes);
+        container.append(isFirefoxRule);
+        isFirefoxRule.walkRules((rule) => {
+          rule.selector = `.${e(
+            `firefox${separator}${rule.selector.slice(1)}`
+          )}`;
+        });
+      });
+    }),
   ],
 };
