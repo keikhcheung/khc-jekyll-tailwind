@@ -28,7 +28,7 @@
 }
 
 .prose .ter {
-  @apply text-gray-400 italic;
+  @apply text-gray-400 italic mb-12;
 }
 
 .prose .wide {

@@ -32,7 +32,7 @@ Mundane observations, distilled thoughts.
                 internal-link"
          href="{{ post.url | prepend: site.baseurl }}{%- if site.use_html_extension -%}.html{%- endif -%}">
         {% if post.image %}
-          <img src="{{ post.image }}" class="mx-auto max-h-[540px] xl:max-h-[440px]" alt="{{ post.image_alt }}">
+          <img src="{{ post.image }}" class="mx-auto max-h-[456px] md:max-h-[540px] xl:max-h-[440px]" alt="{{ post.image_alt }}">
         {% endif %}
 
         <div class="font-medium underline">{{ post.title }}</div>

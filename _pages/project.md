@@ -15,7 +15,7 @@ permalink:  /project
                 internal-link"
          href="{{ item.url | prepend: site.baseurl }}{%- if site.use_html_extension -%}.html{%- endif -%}">
         {% if item.image %}
-          <img src="{{ item.image }}" class="mx-auto max-h-[540px] xl:max-h-[440px]" alt="{{ post.image_alt }}">
+          <img src="{{ item.image }}" class="mx-auto max-h-[456px] md:max-h-[540px] xl:max-h-[440px]" alt="{{ post.image_alt }}">
         {% endif %}
 
         {% if item.title %}
@@ -45,7 +45,7 @@ permalink:  /project
                 internal-link"
          href="{{ item.url | prepend: site.baseurl }}{%- if site.use_html_extension -%}.html{%- endif -%}">
         {% if item.image %}
-          <img src="{{ item.image }}" class="mx-auto max-h-[540px] xl:max-h-[440px]" alt="{{ post.image_alt }}">
+          <img src="{{ item.image }}" class="mx-auto max-h-[456px] md:max-h-[540px] xl:max-h-[440px]" alt="{{ post.image_alt }}">
         {% endif %}
 
         <div class="font-medium underline">{{ item.title }}</div>

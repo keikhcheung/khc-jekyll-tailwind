@@ -1,3 +1,8 @@
+- title: Studydrive
+  client: 
+  description: University students community platform & career portal
+  image: /static/img/project/tuev-compass.jpg
+  url: /studydrive
 - title: ComPASS
   client: TÜV Rheinland
   description: B2E software for coordinating technical certification

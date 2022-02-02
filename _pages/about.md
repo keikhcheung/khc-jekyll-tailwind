@@ -42,7 +42,7 @@ Some companies/organisations for which I did creative work include:
 
 # \# skills ## know-how #<br /># interests \#
 
-I like crossing different disciplines to discover new insights and applying ideas back to design. I believe <mark>perspectives</mark> help include people and create environments/products which can connect them & enable possibilities.
+I like crossing different disciplines to discover new insights and applying ideas back to design. I believe <mark>wider perspectives</mark> help include people and create environments/products which can connect them & enable possibilities.
 
 {:.sec}
 My core skills include:
