@@ -1,10 +1,10 @@
 ---
 layout:    page
-title:     Tintoretto2Go&colon; hijack adverts with art + city treasure hunt
+title:     'Tintoretto2Go: hijack adverts with art + city treasure hunt'
 image:     /static/img/project/tintoretto-screenshots.jpg
-time:      Jun ~ Nov 2017
-setup:     with denkwerk GmbH for Wallraf-Richartz Museum & Fondation Corboud.
-lede:      How to make classical art appealing to young people?
+time:      'Jun – Nov 2017'
+setup:     '@ denkwerk GmbH for Wallraf-Richartz Museum & Fondation Corboud'
+lede:      'How to make classical art appealing to young people?'
 permalink: /tintoretto
 redirect_from:
   - /tintoretto/
@@ -47,6 +47,39 @@ websites:
 - [Econ Megaphon Awards 2019](https://web.archive.org/web/20200803084343/https://www.econforum.de/beitraege/econ-megaphon-awards/2019/mobileapps/tintoretto2go): *Digitale Medien (Mobile/Apps)* and *Bester der Branche - Kunst, Kultur und Sport (B2C)*
 
 </div>
+
+<div class="summary" markdown="1">
+
+# At a glance
+
+Role: UX Designer
+
+Objective:
+- Promote a temporary exhibition at a classical art museum.
+
+Challenge:
+- Make classical art interacrive and engaging to younger generations.
+
+Team set-up:
+- 1 UX Designer (me) + 2 Visual Designers + 1 3D artist at denkwerk
+- 1 Project Manager + development team at denkwerk
+- Stakeholders: exhibition curator, art director
+
+Major responsibilities:
+1. Research into licenced classical paintings to develop storylines.
+2. Design the augmented reality painting experience with Visual Designers.
+3. Blueprint game experience in the city.
+4. Collaborate with 3D artist on AR modelling, interactions and animation. Support development.
+5. Evaluate prototypes, conduct user tests, and identify improvements.
+
+Tools:
+- Photoshop, Sketch
+- Blender
+- Jira
+
+</div>
+
+---
 
 # Background
 How to make classical art appealing to young people?
