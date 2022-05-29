@@ -27,7 +27,7 @@ My team and I started with a **content audit** and classified the types of infor
 ![Paper mock-ups for accommodation reservation](/static/img/project/chamrousse03-2.jpg)
 
 # Hands-on
-With regard to the identified use cases, we appled card sorting to re-shuffle the architecture and gradually standardised navigation paths. We produced quick and dirty paper mock-ups for testing our **🔀 user flow**. We iterated our design according to testers' feedback. We put ski resort visitors' concern to our highest priority, but also retained a seasonal touch for summer activities.
+With regard to the identified use cases, we applied card sorting to re-shuffle the architecture and gradually standardised navigation paths. We produced quick and dirty paper mock-ups for testing our **🔀 user flow**. We iterated our design according to testers' feedback. We put ski resort visitors' concern to our highest priority, but also retained a seasonal touch for summer activities.
 
 At the same time, our graphic designers refreshed Chamrousse Tourism Office's **visual identity** and aligned it across the online interfaces we produced. This gave a fresh, energetic yet calming look. 😄
 

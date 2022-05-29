@@ -16,10 +16,10 @@ tags:
 ---
 
 # Backdrop
-Everything started with 🎶 <i>Mozart's Requiem in D minor, K. 626</i>, a song around which our short had to encircle.
+Everything started with 🎶 <i>Mozart's Requiem in D minor, K. 626</i>, a song around which our short had to encircle.
 
 # Synopsis
-One day, *Monsieur* receives a medical letter which declares his 🚑 critical health situation and his imminent death. Disheartened by this news, he laments in tears, until the servants bring him to his bucket list, of which the last item—create his life-time masterpiece—remains unchecked…
+One day, *Monsieur* receives a medical letter which declares his 🚑 critical health situation and his imminent death. Disheartened by this news, he laments in tears, until the servants bring him to his bucket list, of which the last item—create his life-time masterpiece—remains unchecked…
 
 <div class="video aspect-w-16 aspect-h-9">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wAw07WYBI6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
