@@ -139,7 +139,7 @@
  * Video
  */
 .prose .video {
-  @apply my-8;
+  @apply my-6 lg:my-8;
 }
 
 
@@ -255,11 +255,34 @@ body {
   @apply m-0 !important;
 } */
 .client {
-  @apply before:content-['\25A9'];
+  @apply before:content-['\25A9\2006'];   /* ▩  Square with diagonal crosshatch fill and six-per-em space */
 }
+.client:not(:first-of-type) {
+  @apply before:content-['\2002\25A9\2006'];   /*  ▩  additional en space for spacing from the next item */
+}
+
 .skill {
-  @apply before:content-['\25C9'];
+  @apply before:content-['\25C9\2006'];   /* ◉  Fisheye + six-per-em space */
 }
+.skill:not(:first-of-type) {
+  @apply before:content-['\2002\25C9\2006'];   /*  ◉  additional en space for spacing from the next item */
+}
+
 .interest {
-  @apply before:content-['\25CE'];
+  @apply before:content-['\25CE\2006'];   /* ◎  Bullseye + six-per-em space */
+}
+.interest:not(:first-of-type) {
+  @apply before:content-['\2002\25CE\2006'];   /*  ◎  additional en space for spacing from the next item */
+}
+
+
+/*
+ * Project summary
+ */
+.summary p {
+  @apply text-sm xl:text-base;
+}
+
+.summary .summary-block-layout {
+  @apply grid gap-x-12 gap-y-4 grid-cols-1 xl:grid-cols-2 text-sm xl:text-base wide;
 }

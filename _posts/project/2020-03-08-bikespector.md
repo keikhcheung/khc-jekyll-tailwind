@@ -1,10 +1,10 @@
 ---
 layout:    page
-title:     Bikespector&colon; shared bikes prediction
+title:     'Bikespector: shared bikes prediction'
 image:     /static/img/project/bikespector-radar.jpg
-time:      Apr ~ Aug 2019
-setup:     machine learning research with data visualisation in denkwerk.
-lede:      Can I count on my shared bike? 🚲 Forecasting bike hire availability for reliable shared mobility.
+time:      'Apr – Aug 2019'
+setup:     'Machine learning research with data visualisation @ denkwerk.'
+lede:      'Can I count on my shared bike? 🚲 Forecasting bike hire availability for reliable shared mobility.'
 permalink: /bikespector
 redirect_from:
   - /bikespector/
@@ -42,6 +42,46 @@ websites:
 - [Golden Awards of Montreux 2020](https://web.archive.org/web/20210714191522/http://www.goldenawardmontreux.com/winners2020/finalists.php?entrytype=DIGITAL+%2F+INTERACTIVE): Finalist, 'Community Applications' and 'Retail/Travel/Hotels/Tourism' in Digital/Interactive
 
 </div>
+
+<div class="summary" markdown="1">
+
+# At a glance
+
+**Role:** Experience Designer
+
+**Objective:** Promote a temporary exhibition at a classical art museum.
+
+<div class="summary-block-layout" markdown="1">
+<div class="summary-block" markdown="1">
+**Challenge:**
+- Make classical art interacrive and engaging to younger generations.
+</div>
+
+<div class="summary-block" markdown="1">
+**Team set-up:**
+- 1 Experience Designer (me) + 2 Visual Designers at denkwerk
+- 1 web developer + 2 data specialists at denkwerk
+- Stakeholders: art director
+</div>
+
+<div class="summary-block" markdown="1">
+**Major responsibilities:**
+1. Research into open data to explore possible correlation for prediction.
+2. Hone the use case and design concept with Visual Designers.
+3. Contribute to interface design. Inspect usability in prototypes.
+4. Conduct user tests and propose design iterations.
+</div>
+
+<div class="summary-block" markdown="1">
+**Tools:**
+- Figma
+- Jira, Confluence
+</div>
+</div>
+
+</div>
+
+---
 
 # Problem
 Can I count on my shared bike? 🚲

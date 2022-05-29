@@ -20,6 +20,8 @@ permalink:  /notes/
 
 Ongoing, working notes, scraped from all around.
 
+Inspect connections and node graph [here](https://notes.keikhcheung.com). 🕸
+
 <!-- 
   Tag list here
  -->

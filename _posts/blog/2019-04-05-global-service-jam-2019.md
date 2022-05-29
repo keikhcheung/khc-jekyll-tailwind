@@ -80,11 +80,11 @@ To present our concept and pitch our service, we built our simulation prototype 
 </video>
 --->
 
-<div class="e-iframe">
+<!-- <div class="e-iframe">
 <iframe src="https://player.vimeo.com/video/327940314" width="992" height="558" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
+</div> -->
 
-<div style="padding:56.25% 0 0 0;position:relative;">
+<div style="padding:56.25% 0 0 0;position:relative;" class="video">
 <iframe src="https://player.vimeo.com/video/327940314?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
