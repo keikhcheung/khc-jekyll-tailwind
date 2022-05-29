@@ -59,8 +59,8 @@ websites:
 
 <div class="summary-block" markdown="1">
 **Team set-up:**
-- 1 Experience Designer (me) + 2 Visual Designers at denkwerk
-- 1 web developer + 2 data specialists at denkwerk
+- 1 Experience Designer (me) + 2 Visual Designers at denkwerk
+- 1 web developer + 2 data specialists at denkwerk
 - Stakeholders: art director
 </div>
 

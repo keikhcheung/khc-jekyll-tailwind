@@ -64,8 +64,8 @@ websites:
 
 <div class="summary-block" markdown="1">
 **Team set-up:**
-- 1 UX Designer (me) + 2 Visual Designers + 1 3D artist at denkwerk
-- 1 Project Manager + development team at denkwerk
+- 1 UX Designer (me) + 2 Visual Designers + 1 3D artist at denkwerk
+- 1 Project Manager + development team at denkwerk
 - Stakeholders: exhibition curator, art director
 </div>
 
