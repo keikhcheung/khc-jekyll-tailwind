@@ -16,10 +16,27 @@ I speak English, French, Cantonese, Mandarin Chinese, and GIF; also a bit of Ger
 
 I have worked in 🇩🇪 Germany, 🇫🇷 France, 🇭🇰 Hong Kong and 🇺🇸 the USA in the creative industry, education, and on the customer front.
 
-At the moment, I am doing product design for the student platform [Studydrive](https://www.studydrive.net/) by day.
+At the moment, I am doing product design for the student platform [Studydrive](/studydrive) by day.
 
 {:.sec}
 Some companies/organisations for which I did creative work include:
+
+<!-- {:.sec .columns-2}
+- Esprit
+- TÜV Rheinland
+- Deutsche Telekom
+- BurdaForward
+- Leybold
+- Panasonic
+- Wallraf-Richartz Museum & Fondation Corboud
+- Stadtwerke München
+- Institut Carnot de l’Éducation
+- Deutsche Post
+- Fondation Internet Nouvelle Génération (la Fing)
+- Cozy Cloud
+- Lyon museums
+- European Union Academic Programme Hong Kong
+- UniKlinik Köln -->
 
 {:.sec}
 <span class="client">Esprit</span> 
