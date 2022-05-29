@@ -1,13 +1,13 @@
 ---
 layout:    page
-title:     'Studydrive: university students’ best partner'
+title:     'Studydrive: university students’ best edtech partner'
 image:     /static/img/project/studydrive.png
 time:      'since Dec 2020'
 setup:     'Product design @ Studydrive'
 lede:      'Leverage mutual aid between student community and connect companies with aspiring talents.'
 permalink: /studydrive
 tags:
-  - EdTech
+  - education
   - community
   - ux-ui
   - design-system
